@@ -7,7 +7,9 @@ setuptools.setup(
     author_email="Hamish.Gibbs@lshtm.ac.uk",
     description="Utilities for managing Facebook Data For Good data workflow.",
     url="https://github.com/hamishgibbs/fbprocess",
-    install_requires=[],
+    install_requires=[
+        'Click',
+    ],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -15,4 +17,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
+    entry_points='''
+        [console_scripts]
+        process_fb=process_fb.process_fb:cli
+    ''',
 )
