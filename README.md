@@ -1,4 +1,6 @@
-# fbprocess
+# process_fb
+[![GitHub Actions (Tests)](https://github.com/hamishgibbs/process_fb/workflows/Tests/badge.svg)](https://github.com/hamishgibbs/process_fb)
+[![codecov](https://codecov.io/gh/hamishgibbs/process_fb/branch/master/graph/badge.svg)](https://codecov.io/gh/process_fb/pull_facebook_data_for_good)
 
 Package for scaffolding a data processing pipeline from Facebook Data for Good.
 
