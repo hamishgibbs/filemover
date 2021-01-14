@@ -1,0 +1,21 @@
+action: py38, msg: installpkg
+cwd: /Users/hamishgibbs/Documents/productivity/process_fb
+cmd: /Users/hamishgibbs/Documents/productivity/process_fb/.tox/py38/bin/python -m pip install --exists-action w .tox/.tmp/package/1/process_fb-0.0.1.zip
+Processing ./.tox/.tmp/package/1/process_fb-0.0.1.zip
+Collecting pandas
+  Using cached pandas-1.2.0-cp38-cp38-macosx_10_9_x86_64.whl (10.5 MB)
+Collecting pytz>=2017.3
+  Using cached pytz-2020.5-py2.py3-none-any.whl (510 kB)
+Collecting python-dateutil>=2.7.3
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting numpy>=1.16.5
+  Using cached numpy-1.19.5-cp38-cp38-macosx_10_9_x86_64.whl (15.6 MB)
+Collecting six>=1.5
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Using legacy setup.py install for process-fb, since package 'wheel' is not installed.
+Installing collected packages: pytz, six, python-dateutil, numpy, pandas, process-fb
+    Running setup.py install for process-fb: started
+    Running setup.py install for process-fb: finished with status 'done'
+Successfully installed numpy-1.19.5 pandas-1.2.0 process-fb-0.0.1 python-dateutil-2.8.1 pytz-2020.5 six-1.15.0
+WARNING: You are using pip version 20.1.1; however, version 20.3.3 is available.
+You should consider upgrading via the '/Users/hamishgibbs/Documents/productivity/process_fb/.tox/py38/bin/python -m pip install --upgrade pip' command.

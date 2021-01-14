@@ -8,7 +8,7 @@ setuptools.setup(
     description="Utilities for managing Facebook Data For Good data workflow.",
     url="https://github.com/hamishgibbs/fbprocess",
     install_requires=[
-        'Click',
+        'pandas',
     ],
     packages=setuptools.find_packages(),
     classifiers=[
@@ -16,9 +16,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.6",
-    entry_points='''
-        [console_scripts]
-        process_fb=process_fb.process_fb:cli
-    ''',
+    python_requires=">=3.6"
 )

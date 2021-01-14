@@ -1,0 +1,45 @@
+action: GLOB, msg: packaging
+cwd: /Users/hamishgibbs/Documents/productivity/process_fb
+cmd: /Users/hamishgibbs/anaconda3/bin/python setup.py sdist --formats=zip --dist-dir /Users/hamishgibbs/Documents/productivity/process_fb/.tox/dist
+running sdist
+running egg_info
+creating process_fb.egg-info
+writing process_fb.egg-info/PKG-INFO
+writing dependency_links to process_fb.egg-info/dependency_links.txt
+writing requirements to process_fb.egg-info/requires.txt
+writing top-level names to process_fb.egg-info/top_level.txt
+writing manifest file 'process_fb.egg-info/SOURCES.txt'
+reading manifest file 'process_fb.egg-info/SOURCES.txt'
+writing manifest file 'process_fb.egg-info/SOURCES.txt'
+running check
+creating process_fb-0.0.1
+creating process_fb-0.0.1/process_fb
+creating process_fb-0.0.1/process_fb.egg-info
+copying files to process_fb-0.0.1...
+copying README.md -> process_fb-0.0.1
+copying setup.py -> process_fb-0.0.1
+copying process_fb/__init__.py -> process_fb-0.0.1/process_fb
+copying process_fb/file.py -> process_fb-0.0.1/process_fb
+copying process_fb.egg-info/PKG-INFO -> process_fb-0.0.1/process_fb.egg-info
+copying process_fb.egg-info/SOURCES.txt -> process_fb-0.0.1/process_fb.egg-info
+copying process_fb.egg-info/dependency_links.txt -> process_fb-0.0.1/process_fb.egg-info
+copying process_fb.egg-info/requires.txt -> process_fb-0.0.1/process_fb.egg-info
+copying process_fb.egg-info/top_level.txt -> process_fb-0.0.1/process_fb.egg-info
+Writing process_fb-0.0.1/setup.cfg
+creating /Users/hamishgibbs/Documents/productivity/process_fb/.tox/dist
+creating '/Users/hamishgibbs/Documents/productivity/process_fb/.tox/dist/process_fb-0.0.1.zip' and adding 'process_fb-0.0.1' to it
+adding 'process_fb-0.0.1'
+adding 'process_fb-0.0.1/process_fb.egg-info'
+adding 'process_fb-0.0.1/process_fb'
+adding 'process_fb-0.0.1/PKG-INFO'
+adding 'process_fb-0.0.1/README.md'
+adding 'process_fb-0.0.1/setup.py'
+adding 'process_fb-0.0.1/setup.cfg'
+adding 'process_fb-0.0.1/process_fb.egg-info/PKG-INFO'
+adding 'process_fb-0.0.1/process_fb.egg-info/SOURCES.txt'
+adding 'process_fb-0.0.1/process_fb.egg-info/requires.txt'
+adding 'process_fb-0.0.1/process_fb.egg-info/top_level.txt'
+adding 'process_fb-0.0.1/process_fb.egg-info/dependency_links.txt'
+adding 'process_fb-0.0.1/process_fb/__init__.py'
+adding 'process_fb-0.0.1/process_fb/file.py'
+removing 'process_fb-0.0.1' (and everything under it)
