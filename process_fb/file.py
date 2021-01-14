@@ -50,6 +50,8 @@ def watch_file_dates(in_path, out_path, to=date_to_date, extension='/*.csv', siz
 
             new_date = to([utils.get_file_date(new_files[0])])[0]['new_date']
 
+            new_date = datetime.strftime(new_date, '%Y_%m_%d_%H%M')
+
             file_groups.append({'output_date': new_date, 'input_files': new_files})
 
     return(file_groups)
