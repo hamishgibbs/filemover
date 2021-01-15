@@ -38,7 +38,7 @@ def watch_file_dates(in_files, out_files, to=date_to_date, size=1):
 
         in_file_dates_transformed = [x['orig_date'] for x in group]
 
-        new_file_index = [i for i, x in enumerate(in_file_dates_transformed) if x not in out_file_dates]
+        new_file_index = [i for i, x in enumerate(in_file_dates) if x in in_file_dates_transformed and group[0]['new_date'] not in out_file_dates]
 
         new_files = [in_files[x] for x in new_file_index]
 
