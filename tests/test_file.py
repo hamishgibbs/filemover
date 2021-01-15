@@ -38,7 +38,10 @@ def test_watch_files_no_change(tmp_dir1, tmp_dir2):
 
         assert os.path.exists(path)
 
-    res = file.watch_file_dates(tmp_dir1, tmp_dir2, to=file.date_to_date, size = 1)
+    in_files = glob.glob(tmp_dir1 + '/*.csv')
+    out_files = glob.glob(tmp_dir2 + '/*.csv')
+
+    res = file.watch_file_dates(in_files, out_files, to=file.date_to_date, size = 1)
 
     assert type(res) is list
 
@@ -73,7 +76,10 @@ def test_watch_files_day_to_weekly(tmp_dir1, tmp_dir2):
 
         assert os.path.exists(path)
 
-    res = file.watch_file_dates(tmp_dir1, tmp_dir2, to=file.date_to_weekly, size=7)
+    in_files = glob.glob(tmp_dir1 + '/*.csv')
+    out_files = glob.glob(tmp_dir2 + '/*.csv')
+
+    res = file.watch_file_dates(in_files, out_files, to=file.date_to_weekly, size=7)
 
     assert type(res) is list
 
@@ -104,7 +110,10 @@ def test_watch_files_hrs_to_daily(tmp_dir1, tmp_dir2):
 
         assert os.path.exists(path)
 
-    res = file.watch_file_dates(tmp_dir1, tmp_dir2, to=file.date_to_daily, size=3)
+    in_files = glob.glob(tmp_dir1 + '/*.csv')
+    out_files = glob.glob(tmp_dir2 + '/*.csv')
+
+    res = file.watch_file_dates(in_files, out_files, to=file.date_to_daily, size=3)
 
     assert type(res) is list
 

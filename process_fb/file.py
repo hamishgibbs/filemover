@@ -16,14 +16,14 @@ def date_to_date(dates: list):
     return(ref_dates)
 
 
-def watch_file_dates(in_path, out_path, to=date_to_date, extension='/*.csv', size=1):
+def watch_file_dates(in_files, out_files, to=date_to_date, size=1):
     # identify files in in directory that are not in out directory
 
-    in_files = glob.glob(in_path + extension)
+    #in_files = glob.glob(in_path + extension)
 
     in_file_dates = [utils.get_file_date(x) for x in in_files]
 
-    out_files = glob.glob(out_path + extension)
+    #out_files = glob.glob(out_path + extension)
 
     out_file_dates = [utils.get_file_date(x) for x in out_files]
 
