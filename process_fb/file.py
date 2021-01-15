@@ -19,11 +19,7 @@ def date_to_date(dates: list):
 def watch_file_dates(in_files, out_files, to=date_to_date, size=1):
     # identify files in in directory that are not in out directory
 
-    #in_files = glob.glob(in_path + extension)
-
     in_file_dates = [utils.get_file_date(x) for x in in_files]
-
-    #out_files = glob.glob(out_path + extension)
 
     out_file_dates = [utils.get_file_date(x) for x in out_files]
 
@@ -40,7 +36,7 @@ def watch_file_dates(in_files, out_files, to=date_to_date, size=1):
 
     for group in date_groups:
 
-        in_file_dates_transformed = [x['new_date'] for x in group]
+        in_file_dates_transformed = [x['orig_date'] for x in group]
 
         new_file_index = [i for i, x in enumerate(in_file_dates_transformed) if x not in out_file_dates]
 
