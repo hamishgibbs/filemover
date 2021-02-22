@@ -3,7 +3,7 @@
 [![codecov](https://codecov.io/gh/hamishgibbs/process_fb/branch/master/graph/badge.svg)](https://codecov.io/gh/hamishgibbs/process_fb)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://github.com/hamishgibbs/fbutils_py)
 
-Functions to combine date-named files together.
+Functions to combine date-named files into different time windows.
 
 ### Installation
 
